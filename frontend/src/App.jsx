@@ -5,6 +5,10 @@ import Register from "./pages/Register"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./components/ProtectedRoute"
+import CustomNavbar from "./components/CustomNavbar"
+import "react-bootstrap/dist/react-bootstrap.min.js"
+
+
 
 function Logout() {
 	localStorage.clear()
@@ -21,6 +25,7 @@ function App() {
 	return (
 
 		<BrowserRouter>
+			<CustomNavbar />
 			<Routes>
 				<Route
 					path="/"
